@@ -1,0 +1,8 @@
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.csproj.AssemblyReference.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\rpswa.dswa.cache.json
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.AssemblyInfoInputs.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.AssemblyInfo.cs
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.csproj.CoreCompileInputs.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Api\obj\Debug\net9.0\SmartWorkshop.Workshop.Api.MvcApplicationPartsAssemblyInfo.cache

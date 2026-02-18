@@ -1,0 +1,11 @@
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\bin\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.deps.json
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\bin\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.dll
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\bin\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.pdb
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.AssemblyInfo.cs
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.dll
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\refint\SmartWorkshop.Workshop.Infrastructure.dll
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\SmartWorkshop.Workshop.Infrastructure.pdb
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Infrastructure\obj\Debug\net9.0\ref\SmartWorkshop.Workshop.Infrastructure.dll
