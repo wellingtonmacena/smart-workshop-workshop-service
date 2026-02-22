@@ -29,18 +29,18 @@ public class RepairLog : Entity
     /// <summary>
     /// URLs das fotos do reparo (antes/depois, peças substituídas, etc)
     /// </summary>
-    public List<string> PhotoUrls { get; private set; }
+    public List<string> PhotoUrls { get; private set; } = new();
     
     /// <summary>
     /// Peças/insumos utilizados no reparo
     /// </summary>
-    public List<PartUsage> PartsUsed { get; private set; }
+    public List<PartUsage> PartsUsed { get; private set; } = new();
     
     /// <summary>
     /// Medições pós-reparo (torque, pressão, alinhamento, etc)
     /// Schema flexível permite diferentes tipos de medições
     /// </summary>
-    public Dictionary<string, string> Measurements { get; private set; }
+    public Dictionary<string, string> Measurements { get; private set; } = new();
 
     public RepairLog AddPhoto(string photoUrl)
     {

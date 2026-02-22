@@ -29,18 +29,18 @@ public class DiagnosticLog : Entity
     /// <summary>
     /// URLs das fotos do diagnóstico (S3, blob storage, etc)
     /// </summary>
-    public List<string> PhotoUrls { get; private set; }
+    public List<string> PhotoUrls { get; private set; } = new();
     
     /// <summary>
     /// Medições realizadas (ex: "pressao_pneu_dianteiro_esquerdo": "32 PSI")
     /// Schema flexível permite diferentes tipos de medições por veículo
     /// </summary>
-    public Dictionary<string, string> Measurements { get; private set; }
+    public Dictionary<string, string> Measurements { get; private set; } = new();
     
     /// <summary>
     /// Lista de problemas identificados
     /// </summary>
-    public List<string> Findings { get; private set; }
+    public List<string> Findings { get; private set; } = new();
 
     public DiagnosticLog AddPhoto(string photoUrl)
     {

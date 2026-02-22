@@ -23,6 +23,9 @@ public class AvailableService : Entity
     public decimal LaborPrice { get; private set; } // Preço da mão de obra
     public int? EstimatedDurationMinutes { get; private set; }
     
+    // Navigation property
+    public ICollection<ServiceOrder> ServiceOrders { get; private set; } = new List<ServiceOrder>();
+    
     /// <summary>
     /// Insumos necessários para este serviço (com quantidades)
     /// </summary>

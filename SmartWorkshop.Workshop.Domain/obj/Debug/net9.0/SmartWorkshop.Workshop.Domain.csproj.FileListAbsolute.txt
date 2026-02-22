@@ -1,10 +1,12 @@
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\bin\Debug\net9.0\SmartWorkshop.Workshop.Domain.deps.json
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\bin\Debug\net9.0\SmartWorkshop.Workshop.Domain.dll
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\bin\Debug\net9.0\SmartWorkshop.Workshop.Domain.pdb
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.csproj.AssemblyReference.cache
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.AssemblyInfoInputs.cache
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.AssemblyInfo.cs
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.sourcelink.json
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.dll
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\refint\SmartWorkshop.Workshop.Domain.dll
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Domain\obj\Debug\net9.0\SmartWorkshop.Workshop.Domain.pdb

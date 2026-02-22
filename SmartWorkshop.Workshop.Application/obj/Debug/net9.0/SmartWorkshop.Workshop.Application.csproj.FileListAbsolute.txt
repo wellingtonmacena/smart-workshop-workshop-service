@@ -1,10 +1,15 @@
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\bin\Debug\net9.0\SmartWorkshop.Workshop.Application.deps.json
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\bin\Debug\net9.0\SmartWorkshop.Workshop.Application.dll
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\bin\Debug\net9.0\SmartWorkshop.Workshop.Application.pdb
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\bin\Debug\net9.0\SmartWorkshop.Workshop.Domain.dll
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\bin\Debug\net9.0\SmartWorkshop.Workshop.Domain.pdb
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.csproj.AssemblyReference.cache
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.AssemblyInfoInputs.cache
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.AssemblyInfo.cs
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.csproj.CoreCompileInputs.cache
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.sourcelink.json
+C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWor.77FC46C0.Up2Date
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.dll
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\refint\SmartWorkshop.Workshop.Application.dll
 C:\Users\Wellington\OneDrive\Desktop\github\POS-FIAP-TECH04\smart-workshop-workshop-service\SmartWorkshop.Workshop.Application\obj\Debug\net9.0\SmartWorkshop.Workshop.Application.pdb

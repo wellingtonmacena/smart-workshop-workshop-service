@@ -1,4 +1,5 @@
 using SmartWorkshop.Workshop.Domain.Common;
+using SmartWorkshop.Workshop.Domain.States.ServiceOrder;
 using SmartWorkshop.Workshop.Domain.ValueObjects;
 
 namespace SmartWorkshop.Workshop.Domain.Entities;
@@ -9,6 +10,8 @@ namespace SmartWorkshop.Workshop.Domain.Entities;
 /// </summary>
 public class ServiceOrder : Entity
 {
+    private ServiceOrderState _state = new ReceivedState();
+    
     private ServiceOrder() { }
 
     public ServiceOrder(string title, string description, Guid vehicleId, Guid clientId)
@@ -18,6 +21,7 @@ public class ServiceOrder : Entity
         VehicleId = vehicleId;
         ClientId = clientId;
         Status = ServiceOrderStatus.Received;
+        _state = new ReceivedState();
     }
 
     public ServiceOrderStatus Status { get; private set; }
@@ -25,6 +29,12 @@ public class ServiceOrder : Entity
     public Guid VehicleId { get; private set; }
     public string Title { get; private set; } = string.Empty;
     public string Description { get; private set; } = string.Empty;
+    
+    // Navigation properties
+    public Person? Client { get; private set; }
+    public Vehicle? Vehicle { get; private set; }
+    public List<Quote> Quotes { get; private set; } = new();
+    public List<AvailableService> AvailableServices { get; private set; } = new();
     
     /// <summary>
     /// Serviços incluídos nesta OS
@@ -70,16 +80,39 @@ public class ServiceOrder : Entity
         return this;
     }
 
+    public ServiceOrder SetState(ServiceOrderState state)
+    {
+        _state = state;
+        Status = state.Status;
+        return this;
+    }
+
     public ServiceOrder ChangeStatus(ServiceOrderStatus newStatus, string? reason = null)
     {
-        ValidateStatusTransition(newStatus);
+        // Delega ao State pattern para validar e transicionar
+        _state.ChangeStatus(this, newStatus);
         
-        var oldStatus = Status;
-        Status = newStatus;
-        
-        Events.Add(new ServiceOrderEvent(Id, oldStatus, newStatus, reason));
+        // Registra o evento de mudança de status
+        Events.Add(new ServiceOrderEvent(Id, Status, newStatus, reason));
         MarkAsUpdated();
         
+        return this;
+    }
+
+    public ServiceOrder SyncState()
+    {
+        _state = Status switch
+        {
+            ServiceOrderStatus.Received => new ReceivedState(),
+            ServiceOrderStatus.UnderDiagnosis => new UnderDiagnosisState(),
+            ServiceOrderStatus.WaitingApproval => new WaitingApprovalState(),
+            ServiceOrderStatus.InProgress => new InProgressState(),
+            ServiceOrderStatus.Completed => new CompletedState(),
+            ServiceOrderStatus.Delivered => new DeliveredState(),
+            ServiceOrderStatus.Cancelled => new CancelledState(),
+            ServiceOrderStatus.Rejected => new RejectedState(),
+            _ => throw new InvalidOperationException($"Unknown status: {Status}")
+        };
         return this;
     }
 
