@@ -24,7 +24,7 @@ public sealed class CreateQuoteHandler(
 
         // Criar o Quote
         var quote = new Quote(request.ServiceOrderId);
-        
+
         if (!string.IsNullOrEmpty(request.Notes))
         {
             quote.SetNotes(request.Notes);

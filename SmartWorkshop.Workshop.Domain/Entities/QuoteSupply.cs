@@ -25,7 +25,7 @@ public sealed class QuoteSupply
     public decimal Price { get; private set; }
     public int Quantity { get; private set; }
     public string SupplyName { get; private set; } = string.Empty;
-    
+
     // Navigation properties
     public Quote Quote { get; private set; } = null!;
     public Supply Supply { get; private set; } = null!;

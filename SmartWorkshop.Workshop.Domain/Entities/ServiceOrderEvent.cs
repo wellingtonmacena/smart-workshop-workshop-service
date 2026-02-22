@@ -25,7 +25,7 @@ public class ServiceOrderEvent : Entity
     public ServiceOrderStatus ToStatus { get; private set; }
     public string? Reason { get; private set; }
     public DateTime OccurredAt { get; private set; }
-    
+
     // Navigation property
     public ServiceOrder? ServiceOrder { get; private set; }
 }

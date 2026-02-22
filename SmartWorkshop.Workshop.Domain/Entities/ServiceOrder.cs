@@ -11,7 +11,7 @@ namespace SmartWorkshop.Workshop.Domain.Entities;
 public class ServiceOrder : Entity
 {
     private ServiceOrderState _state = new ReceivedState();
-    
+
     private ServiceOrder() { }
 
     public ServiceOrder(string title, string description, Guid vehicleId, Guid clientId)
@@ -29,23 +29,23 @@ public class ServiceOrder : Entity
     public Guid VehicleId { get; private set; }
     public string Title { get; private set; } = string.Empty;
     public string Description { get; private set; } = string.Empty;
-    
+
     // Navigation properties
     public Person? Client { get; private set; }
     public Vehicle? Vehicle { get; private set; }
     public List<Quote> Quotes { get; private set; } = new();
     public List<AvailableService> AvailableServices { get; private set; } = new();
-    
+
     /// <summary>
     /// Serviços incluídos nesta OS
     /// </summary>
     public List<Guid> AvailableServiceIds { get; private set; } = new();
-    
+
     /// <summary>
     /// Eventos de mudança de status (auditoria)
     /// </summary>
     public List<ServiceOrderEvent> Events { get; private set; } = new();
-    
+
     /// <summary>
     /// ID do orçamento aprovado (se houver)
     /// </summary>
@@ -58,7 +58,7 @@ public class ServiceOrder : Entity
 
         if (!AvailableServiceIds.Contains(serviceId))
             AvailableServiceIds.Add(serviceId);
-        
+
         return this;
     }
 
@@ -67,12 +67,12 @@ public class ServiceOrder : Entity
         if (!CanBeUpdated())
             throw new DomainException($"Service Order with status {Status} cannot be updated.");
 
-        if (!string.IsNullOrEmpty(title)) 
+        if (!string.IsNullOrEmpty(title))
             Title = title;
-        
-        if (!string.IsNullOrEmpty(description)) 
+
+        if (!string.IsNullOrEmpty(description))
             Description = description;
-        
+
         if (serviceIds != null)
             AvailableServiceIds = serviceIds;
 
@@ -91,11 +91,11 @@ public class ServiceOrder : Entity
     {
         // Delega ao State pattern para validar e transicionar
         _state.ChangeStatus(this, newStatus);
-        
+
         // Registra o evento de mudança de status
         Events.Add(new ServiceOrderEvent(Id, Status, newStatus, reason));
         MarkAsUpdated();
-        
+
         return this;
     }
 
@@ -123,7 +123,7 @@ public class ServiceOrder : Entity
 
         ApprovedQuoteId = quoteId;
         ChangeStatus(ServiceOrderStatus.InProgress, "Quote approved");
-        
+
         return this;
     }
 
@@ -133,14 +133,14 @@ public class ServiceOrder : Entity
             throw new DomainException($"Cannot reject quote. Service Order must be in WaitingApproval status.");
 
         ChangeStatus(ServiceOrderStatus.Rejected, reason);
-        
+
         return this;
     }
 
     private bool CanBeUpdated()
     {
-        return Status is ServiceOrderStatus.Received 
-            or ServiceOrderStatus.UnderDiagnosis 
+        return Status is ServiceOrderStatus.Received
+            or ServiceOrderStatus.UnderDiagnosis
             or ServiceOrderStatus.WaitingApproval;
     }
 

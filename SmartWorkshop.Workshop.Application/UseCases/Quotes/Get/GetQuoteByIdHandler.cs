@@ -12,7 +12,7 @@ public sealed class GetQuoteByIdHandler(
     public async Task<Response<Quote>> Handle(GetQuoteByIdQuery request, CancellationToken cancellationToken)
     {
         var quote = await quoteRepository.GetByIdAsync(request.QuoteId, cancellationToken);
-        
+
         if (quote is null)
         {
             return ResponseFactory.Fail<Quote>("Quote not found", HttpStatusCode.NotFound);

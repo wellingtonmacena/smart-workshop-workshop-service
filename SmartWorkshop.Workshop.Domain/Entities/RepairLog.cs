@@ -25,17 +25,17 @@ public class RepairLog : Entity
     public Guid TechnicianId { get; private set; }
     public string Description { get; private set; } = string.Empty;
     public DateTime Timestamp { get; private set; }
-    
+
     /// <summary>
     /// URLs das fotos do reparo (antes/depois, peças substituídas, etc)
     /// </summary>
     public List<string> PhotoUrls { get; private set; } = new();
-    
+
     /// <summary>
     /// Peças/insumos utilizados no reparo
     /// </summary>
     public List<PartUsage> PartsUsed { get; private set; } = new();
-    
+
     /// <summary>
     /// Medições pós-reparo (torque, pressão, alinhamento, etc)
     /// Schema flexível permite diferentes tipos de medições

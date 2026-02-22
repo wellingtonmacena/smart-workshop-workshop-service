@@ -22,10 +22,10 @@ public class AvailableService : Entity
     public string? Description { get; private set; }
     public decimal LaborPrice { get; private set; } // Preço da mão de obra
     public int? EstimatedDurationMinutes { get; private set; }
-    
+
     // Navigation property
     public ICollection<ServiceOrder> ServiceOrders { get; private set; } = new List<ServiceOrder>();
-    
+
     /// <summary>
     /// Insumos necessários para este serviço (com quantidades)
     /// </summary>
@@ -33,12 +33,12 @@ public class AvailableService : Entity
 
     public AvailableService Update(string? name, decimal? laborPrice, string? description, int? estimatedDurationMinutes)
     {
-        if (!string.IsNullOrEmpty(name)) 
+        if (!string.IsNullOrEmpty(name))
             Name = name;
-        
-        if (laborPrice.HasValue && laborPrice.Value >= 0) 
+
+        if (laborPrice.HasValue && laborPrice.Value >= 0)
             LaborPrice = laborPrice.Value;
-        
+
         if (!string.IsNullOrEmpty(description))
             Description = description;
 
@@ -81,7 +81,7 @@ public class AvailableService : Entity
 
     public decimal CalculateTotalPrice(Dictionary<Guid, decimal> supplyPrices)
     {
-        var suppliesCost = RequiredSupplies.Sum(rs => 
+        var suppliesCost = RequiredSupplies.Sum(rs =>
         {
             if (supplyPrices.TryGetValue(rs.SupplyId, out var price))
                 return price * rs.Quantity;
@@ -114,7 +114,7 @@ public class ServiceSupply
     {
         if (newQuantity <= 0)
             throw new DomainException("Quantity must be positive");
-        
+
         Quantity = newQuantity;
     }
 }

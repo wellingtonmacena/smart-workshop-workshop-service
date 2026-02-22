@@ -17,7 +17,7 @@ public sealed class Quote : Entity
     public QuoteStatus Status { get; private set; } = QuoteStatus.Pending;
     public decimal Total { get; private set; }
     public string? Notes { get; private set; }
-    
+
     // Navigation properties
     public ServiceOrder ServiceOrder { get; private set; } = null!;
     public ICollection<QuoteService> Services { get; private set; } = [];

@@ -31,7 +31,7 @@ public sealed class RejectQuoteHandler(
             // Adicionar motivo da rejeição às notas se fornecido
             if (!string.IsNullOrEmpty(request.Reason))
             {
-                var notes = string.IsNullOrEmpty(quote.Notes) 
+                var notes = string.IsNullOrEmpty(quote.Notes)
                     ? $"Rejected: {request.Reason}"
                     : $"{quote.Notes}\nRejected: {request.Reason}";
                 quote.SetNotes(notes);
